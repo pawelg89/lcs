@@ -14,17 +14,17 @@ void TestLCS(std::string &a, std::string &b, const std::string &expected) {
 int main() {
   std::cout << "Testing solution to 'Longest Common Subsequence' problem." << std::endl;
   
-  std::string a("ABCD");
-  std::string b("BDA");
-  TestLCS(a, b, "BD");
+  std::string a("AGGTAB");
+  std::string b("GXTXAYB");
+  TestLCS(a, b, "GTAB");
 
   a = {"JATAXGPDMYLDXUKDNFTPRRUMBMEMLROWRHWOQNTCLGHLCRORZHGSBAECPLPCCDYVNXMDMFHAOPLQ"};
   b = {"IZKHIQBJTIMITDKXIKSXJECWMKWABHSL"};
   TestLCS(a, b, "BBBBBBBBBBBB");
 
-  a = {"AGGTAB"};
-  b = {"GXTXAYB"};
-  TestLCS(a, b, "GTAB");
+  a = {"LRBBMQBHCDARZOWKKYHIDDQSCDXRJMOWFRXSJYBLDBEFSARCBYNECDYGGXXPKLORELLNMPAPQFWKHOPKMCO"};
+  b = {"QHNWNKUEWHSQMGBBUQCLJJIVSWMDKQTBXIXMVTRRBLJPTNSNFWZQFJMAFADRRWSOFSBCNUVQHFFBSAQXWPQCA"};
+  TestLCS(a, b, "2-----------------------5");
 
   system("pause");
   return 0;
